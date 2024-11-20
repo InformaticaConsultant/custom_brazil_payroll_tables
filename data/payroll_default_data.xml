@@ -1,0 +1,61 @@
+<odoo>
+    <!-- Datos predeterminados para INSS -->
+    <record id="inss_rate_1" model="payroll.inss.rate">
+        <field name="range_min">0.00</field>
+        <field name="range_max">1412.00</field>
+        <field name="rate">7.5</field>
+    </record>
+    <record id="inss_rate_2" model="payroll.inss.rate">
+        <field name="range_min">1412.01</field>
+        <field name="range_max">2666.68</field>
+        <field name="rate">9.0</field>
+    </record>
+    <record id="inss_rate_3" model="payroll.inss.rate">
+        <field name="range_min">2666.69</field>
+        <field name="range_max">4000.03</field>
+        <field name="rate">12.0</field>
+    </record>
+    <record id="inss_rate_4" model="payroll.inss.rate">
+        <field name="range_min">4000.04</field>
+        <field name="range_max">7786.02</field>
+        <field name="rate">14.0</field>
+    </record>
+
+    <!-- Datos predeterminados para IRRF -->
+    <record id="irrf_rate_1" model="payroll.irrf.rate">
+        <field name="range_min">0.00</field>
+        <field name="range_max">1903.98</field>
+        <field name="rate">0.0</field>
+        <field name="deduction">0.00</field>
+    </record>
+    <record id="irrf_rate_2" model="payroll.irrf.rate">
+        <field name="range_min">1903.99</field>
+        <field name="range_max">2826.65</field>
+        <field name="rate">7.5</field>
+        <field name="deduction">142.80</field>
+    </record>
+    <record id="irrf_rate_3" model="payroll.irrf.rate">
+        <field name="range_min">2826.66</field>
+        <field name="range_max">3751.05</field>
+        <field name="rate">15.0</field>
+        <field name="deduction">354.80</field>
+    </record>
+    <record id="irrf_rate_4" model="payroll.irrf.rate">
+        <field name="range_min">3751.06</field>
+        <field name="range_max">4664.68</field>
+        <field name="rate">22.5</field>
+        <field name="deduction">636.13</field>
+    </record>
+    <record id="irrf_rate_5" model="payroll.irrf.rate">
+        <field name="range_min">4664.69</field>
+        <field name="range_max">9999999.99</field>
+        <field name="rate">27.5</field>
+        <field name="deduction">869.36</field>
+    </record>
+
+    <!-- Salario mínimo predeterminado -->
+    <record id="minimum_salary_2024" model="payroll.minimum.salary">
+        <field name="year">2024</field>
+        <field name="minimum_salary">1412.00</field>
+    </record>
+</odoo>

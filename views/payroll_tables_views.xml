@@ -1,0 +1,169 @@
+<odoo>
+    <!-- Vistas para INSS Rates -->
+    <record id="view_payroll_inss_rate_tree" model="ir.ui.view">
+        <field name="name">payroll.inss.rate.tree</field>
+        <field name="model">payroll.inss.rate</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="range_min"/>
+                <field name="range_max"/>
+                <field name="rate"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_payroll_inss_rate_form" model="ir.ui.view">
+        <field name="name">payroll.inss.rate.form</field>
+        <field name="model">payroll.inss.rate</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="range_min"/>
+                        <field name="range_max"/>
+                        <field name="rate"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- Vistas para IRRF Rates -->
+    <record id="view_payroll_irrf_rate_tree" model="ir.ui.view">
+        <field name="name">payroll.irrf.rate.tree</field>
+        <field name="model">payroll.irrf.rate</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="range_min"/>
+                <field name="range_max"/>
+                <field name="rate"/>
+                <field name="deduction"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_payroll_irrf_rate_form" model="ir.ui.view">
+        <field name="name">payroll.irrf.rate.form</field>
+        <field name="model">payroll.irrf.rate</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="range_min"/>
+                        <field name="range_max"/>
+                        <field name="rate"/>
+                        <field name="deduction"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- Vistas para FGTS Rates -->
+    <record id="view_payroll_fgts_rate_tree" model="ir.ui.view">
+        <field name="name">payroll.fgts.rate.tree</field>
+        <field name="model">payroll.fgts.rate</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="rate"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_payroll_fgts_rate_form" model="ir.ui.view">
+        <field name="name">payroll.fgts.rate.form</field>
+        <field name="model">payroll.fgts.rate</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="rate"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- Vistas para Dependent Deduction -->
+    <record id="view_payroll_dependent_deduction_tree" model="ir.ui.view">
+        <field name="name">payroll.dependent.deduction.tree</field>
+        <field name="model">payroll.dependent.deduction</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="num_dependents"/>
+                <field name="deduction_per_dependent"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_payroll_dependent_deduction_form" model="ir.ui.view">
+        <field name="name">payroll.dependent.deduction.form</field>
+        <field name="model">payroll.dependent.deduction</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="num_dependents"/>
+                        <field name="deduction_per_dependent"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- Vistas para Additional Table -->
+    <record id="view_payroll_additional_table_tree" model="ir.ui.view">
+        <field name="name">payroll.additional.table.tree</field>
+        <field name="model">payroll.additional.table</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <field name="value"/>
+                <field name="percentage"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_payroll_additional_table_form" model="ir.ui.view">
+        <field name="name">payroll.additional.table.form</field>
+        <field name="model">payroll.additional.table</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="value"/>
+                        <field name="percentage"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- Vistas para Minimum Salary -->
+    <record id="view_payroll_minimum_salary_tree" model="ir.ui.view">
+        <field name="name">payroll.minimum.salary.tree</field>
+        <field name="model">payroll.minimum.salary</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="year"/>
+                <field name="minimum_salary"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_payroll_minimum_salary_form" model="ir.ui.view">
+        <field name="name">payroll.minimum.salary.form</field>
+        <field name="model">payroll.minimum.salary</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="year"/>
+                        <field name="minimum_salary"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+</odoo>

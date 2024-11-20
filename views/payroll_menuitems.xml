@@ -1,0 +1,39 @@
+<odoo>
+    <!-- Menú Principal de Nómina -->
+    <menuitem id="menu_hr_payroll_root" name="Payroll" sequence="10" parent="hr_work_entry_contract_enterprise.menu_hr_payroll_root"/>
+
+    <!-- Submenú para Tablas Personalizadas -->
+    <menuitem id="menu_payroll_tables" name="Payroll Tables" parent="menu_hr_payroll_root" sequence="20"/>
+
+    <!-- Acción para INSS Rates -->
+    <record id="action_inss_rates" model="ir.actions.act_window">
+        <field name="name">INSS Rates</field>
+        <field name="res_model">payroll.inss.rate</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help">Manage INSS rates for payroll calculations.</field>
+    </record>
+
+    <!-- Menú para INSS Rates -->
+    <menuitem id="menu_inss_rates" name="INSS Rates" parent="menu_payroll_tables" action="action_inss_rates" sequence="30"/>
+
+    <!-- Acción para IRRF Rates -->
+    <record id="action_irrf_rates" model="ir.actions.act_window">
+        <field name="name">IRRF Rates</field>
+        <field name="res_model">payroll.irrf.rate</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help">Manage IRRF rates for payroll calculations.</field>
+    </record>
+
+    <!-- Menú para IRRF Rates -->
+    <menuitem id="menu_irrf_rates" name="IRRF Rates" parent="menu_payroll_tables" action="action_irrf_rates" sequence="40"/>
+    <!-- Acción para Minimum Salary -->
+    <record id="action_payroll_minimum_salary" model="ir.actions.act_window">
+        <field name="name">Minimum Salary</field>
+        <field name="res_model">payroll.minimum.salary</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help">Manage the minimum salary by year.</field>
+    </record>
+
+    <!-- Menú para Minimum Salary -->
+    <menuitem id="menu_minimum_salary" name="Minimum Salary" parent="menu_payroll_tables" action="action_payroll_minimum_salary" sequence="50"/>
+</odoo>

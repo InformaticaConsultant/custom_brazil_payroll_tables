@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_payroll_inss_rate,payroll.inss.rate,model_payroll_inss_rate,,1,1,1,1
+access_payroll_irrf_rate,payroll.irrf.rate,model_payroll_irrf_rate,,1,1,1,1
+access_payroll_minimum_salary,payroll.minimum.salary,model_payroll_minimum_salary,,1,1,1,1
