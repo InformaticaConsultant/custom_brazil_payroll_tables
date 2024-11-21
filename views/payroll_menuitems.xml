@@ -1,6 +1,6 @@
 <odoo>
     <!-- Menú Principal de Nómina -->
-    <menuitem id="menu_hr_payroll_root" name="Payroll" sequence="10" parent="hr_work_entry_contract_enterprise.menu_hr_payroll_root"/>
+    <menuitem id="menu_hr_payroll_root" name="Payroll" sequence="100" parent="hr_work_entry_contract_enterprise.menu_hr_payroll_root"/>
 
     <!-- Submenú para Tablas Personalizadas -->
     <menuitem id="menu_payroll_tables" name="Payroll Tables" parent="menu_hr_payroll_root" sequence="20"/>
