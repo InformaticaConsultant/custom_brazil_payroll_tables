@@ -3,6 +3,7 @@ from odoo import models, fields
 class PayrollINSSRate(models.Model):
     _name = 'payroll.inss.rate'
     _description = 'INSS Rates'
+    _order = 'range_min asc'
 
     range_min = fields.Float(string="Minimum Range")
     range_max = fields.Float(string="Maximum Range")
