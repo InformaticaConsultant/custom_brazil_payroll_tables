@@ -5,7 +5,7 @@
         <field name="model">hr.contract</field>
         <field name="inherit_id" ref="hr_contract.hr_contract_view_form"/>
         <field name="arch" type="xml">
-            <xpath expr="//field[@name='wage']" position="after">
+            <xpath expr="//form[1]/sheet[1]/notebook[1]/page[@name='information']/group[@name='salary_info']/group[@name='salary']/field[@name='wage']" position="after">
                 <field name="horas_mes"/>
                 <field name="salario_dia"/>
                 <field name="salario_hora"/>
