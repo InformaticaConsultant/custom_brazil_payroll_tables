@@ -1,7 +1,7 @@
 {
     'name': 'Custom Brazil Payroll Tables',
     'version': '1.0',
-    'author': 'Diego Benitz',
+    'author': 'Diego Benitez',
     'category': 'Human Resources',
     'summary': 'Adds customizable tables for payroll calculations (INSS, IRRF, FGTS) in Brazil.',
     'depends': [
